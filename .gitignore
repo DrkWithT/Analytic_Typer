@@ -1,0 +1,9 @@
+# ignore binaries
+a.out
+*.o
+*.obj
+*.pyc
+
+# ignore special venv folders
+.venv/
+__pycache__/
