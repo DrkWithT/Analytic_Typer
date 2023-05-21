@@ -1,0 +1,149 @@
+/**
+ * style.css
+ * Derek Tan
+ */
+
+:root {
+    --root-bg-1: #1a181c;
+    --root-bg-2: #423f46;
+    --header-bg-1: #3d4652;
+    --header-bg-2: #657488;
+    --line-color-1: #7dadd3;
+    --line-color-2: #406c8e;
+    --txt-color-1: #fcfcfe;
+    --txt-color-2: #dddde1;
+    --txt-good: #8bda84;
+    --txt-bad: #f1692b;
+}
+
+/* Root Styles */
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background-color: var(--root-bg-1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    color: var(--txt-color-2);
+}
+
+/* Header Styles */
+header {
+    display: block;
+    background-color: var(--header-bg-1);
+    color: inherit;
+}
+
+h2 {
+    width: 100%;
+    display: inline-block;
+    padding: 8px;
+    text-align: center;
+    color: var(--line-color-1);
+}
+
+nav {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a.nav-link {
+    display: block;
+    margin: 0;
+    padding: 8px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    transition: border-bottom-color 0.75s 0.375s ease;
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--txt-color-2);
+}
+
+nav a.nav-link:visited {
+    color: var(--txt-good);
+}
+
+nav a.nav-link:hover {
+    border-bottom-color: var(--line-color-1);
+    background-color: var(--header-bg-2);
+    color: var(--txt-color-1);
+}
+
+/* Main Content */
+section {
+    display: block;
+    margin: 16px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--root-bg-2);
+    color: inherit;
+}
+
+section > h3 {
+    text-align: center;
+    transition: color 0.75s 0.375s ease;
+    color: var(--line-color-2);
+}
+
+section > h3:hover {
+    color: var(--line-color-1);
+}
+
+div#test-area {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 8px;
+}
+
+div#test-area > div.test-section {
+    display: block;
+    padding: 8px;
+}
+
+span#time-display {
+    display: inline-block;
+    margin: 8px;
+    padding: 4px;
+    background-color: var(--root-bg-2);
+    font-family: monospace, sans-serif;
+    font-weight: bold;
+    color: var(--txt-bad);
+}
+
+p {
+    margin: 8px;
+    padding: 4px;
+}
+
+p:hover {
+    color: var(--txt-color-1);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.page-btn {
+    display: inline-block;
+    margin: 6px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--line-color-2);
+    font-weight: bold;
+    color: var(--txt-color-1);
+}
+
+button.page-btn:hover {
+    background-color: var(--line-color-1);
+    color: var(--root-bg-1);
+}

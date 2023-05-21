@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+{% endblock %}
+
+{% block top %}
+    <header>
+        <h2>AnalyType</h2>
+        <nav>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">History</a>
+        </nav>
+    </header>
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h3 class="section-title">Brief</h3>
+        <p>
+            Welcome to AnalyType, an adaptive difficulty type tester based on accuracy within a fixed time. Click below to begin.
+        </p>
+        <h3 class="section-title">Standard Mode</h3>
+        <div id="test-area">
+            <div class="test-section">
+                <span id="time-display">N/A</span>
+                <button id="start-btn" class="page-btn">Start</button>
+                <button id="quit-btn" class="page-btn">Stop</button>
+            </div>
+            <div class="test-section">
+                <p>The fox leaps over the fence to grab a snack. The chicken pecks at seeds.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{url_for('static', filename='js/utils.js')}}"></script>
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+{% endblock %}
