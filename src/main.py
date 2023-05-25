@@ -2,7 +2,7 @@
     main.py
     @brief Runs the main server code.
     @author Derek Tan & ??
-    @version 0.1.0
+    @version 0.1.0 Implemented barebones Flask server and skeleton wordgen. 
 """
 
 from atexit import register
@@ -42,7 +42,7 @@ def api_post_result():
         print(f'JSON error: {err}')
         ok_status = False
     else:
-        print(f'Original Text: {typerResults.original}\nUser Text: {typerResults.user}'); # TODO: replace this print statment with function calls for the analytical code.
+        print(f'Original Text: {typerResults["original"]}\nUser Text: {typerResults["user"]}'); # TODO: replace this print statment with function calls for the analytical code.
 
     return {"ok": ok_status}
 
