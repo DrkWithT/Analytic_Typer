@@ -101,7 +101,7 @@ div#test-area {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 8px;
+    padding: 12px;
 }
 
 div#test-area > div.test-section {
@@ -146,4 +146,26 @@ button.page-btn {
 button.page-btn:hover {
     background-color: var(--line-color-1);
     color: var(--root-bg-1);
+}
+
+ul#text-display {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style-type: none;
+    margin: 4px;
+    padding: 8px;
+    color: inherit;
+}
+
+ul#text-display > li.word {
+    display: block;
+    margin: 0 6px;
+    padding: 0;
+}
+
+li.word > span.letter {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
