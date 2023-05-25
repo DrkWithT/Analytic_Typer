@@ -11,10 +11,9 @@
  2. `history`: This shows version history.
  3. `typer`: The typing test page.
 
-### Functionality:
- - Notes TODO!
-
-### TODOs:
- 1. Modify test & timer to only start on keypress for no typing delays.
- 2. Implement test with letter-word accuracy tracking and highlighting.
- 3. Implement AJAX to send result data to server.
+### TODOs: (Worked on by DrkWithT.)
+ 1. ~~Modify test & timer to only start on keypress for no typing delays.~~
+ 2. ~~Implement test with letter-word accuracy tracking and highlighting.~~
+ 3. ~~Implement AJAX to send result data to server.~~
+ 4. **Fix typer bug 3**: The user still needs 1 extra key press to trigger the result posting AJAX despite all letters typed.
+ 5. Add `history` and `about` pages later!
