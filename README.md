@@ -13,6 +13,9 @@ This co-op project aims to be a type tester website but with a twist. Specifical
  - Git
 
 ### Usage:
+ - Create a Python virtual environment in VSCode.
+  - [Background Info](https://code.visualstudio.com/docs/python/environments#_python-environments)
+  - [Creating Env.](https://code.visualstudio.com/docs/python/environments#_creating-environments)
  - Dependency install:
    - Flask: `pip install flask` or `python3 -m pip install flask`
    - Data Science Libraries: `pip install ??`
